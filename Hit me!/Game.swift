@@ -13,11 +13,14 @@ class Game
 {
     var Started:Bool
     var Button:UIButton
-    
+
     var Score:Double
     var ScorePerTap:Double
     
     var Bounds = CGSize()
+    
+    var moveFrequency:TimeInterval
+
     
     var Quotes:[String] = []
     var Achievements:[Achievement] = []
@@ -29,6 +32,7 @@ class Game
         
         self.Button = Button
         self.ScorePerTap = ScorePerTap
+        self.moveFrequency = 1.0
         
         InitQuotes()
         
@@ -41,7 +45,7 @@ class Game
     func InitQuotes()
     {
         Quotes.append("Rich pepe is best pepe")
-        Quotes.append("<3 <3 <3")
+        Quotes.append("♥️♥️♥️")
         Quotes.append("I like trains. For real. And money")
         Quotes.append("I like it when you cash it")
         Quotes.append("Don't stop earning!")
@@ -73,7 +77,7 @@ class Game
         Quotes.append("Get rich, get pepe")
         Quotes.append("Gimme dat money!")
         Quotes.append("Cash is cool, but pepe is cooler.")
-        Quotes.append("Pepe like money.")
+        Quotes.append("Pepe likes money.")
         Quotes.append("Leeroy PEPEEEE")
         Quotes.append("Such money, much rich")
     }
@@ -109,7 +113,11 @@ class Game
         {
             UpdateButton(Image: Achievement.Image, State: .normal)
             
+            //Increase score per tap
             ScorePerTap *= Achievement.Multiplier
+            
+            //Increase difficulty
+            moveFrequency *= 0.70
             
             return "'\(Achievement.Name)': \(Achievement.Description)"
         }
@@ -140,4 +148,6 @@ class Game
         
         Button.frame.origin = CGPoint(x: X, y: Y)
     }
+    
+    
 }

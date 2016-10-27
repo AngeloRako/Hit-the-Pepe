@@ -63,14 +63,14 @@ class ViewController: UIViewController
     var moneyPerTap:Double = 0.5
     var achievement = [Bool](repeating: false, count: 10)
     var timer = Timer()
-    var playing = false
-    var randomQuotes:[String] = []
+    var moveTick = Timer()
+    //var playing = false
     
     func Init()
     {
         Match = Game(ScorePerTap: 0.5, Button: littleGuy)
         
-        restartBtn.setFAText(prefixText: "", icon: FAType.FARefresh, postfixText: "", size: 20)
+        restartBtn.setFAText(prefixText: "", icon: FAType.FARefresh, postfixText: "", size: 15)
     }
     
     override func viewDidLoad()
@@ -94,9 +94,21 @@ class ViewController: UIViewController
         let seconds = Int(interval-Double(minutes)*60.0)
         currentTime.text = String(format: "%02d:%02d", minutes, seconds)
         
-        Match!.MoveButton()
+        //Match!.MoveButton()
     }
     
+    func StartMover(interval: TimeInterval)
+    {
+        moveTick.invalidate()
+        
+        moveTick = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(self.move), userInfo: nil, repeats: true)
+    }
+    
+    func move()
+    {
+        Match!.MoveButton()
+    }
+
     @IBAction func touched(_ sender: AnyObject)
     {
         if let Game = Match
@@ -104,7 +116,7 @@ class ViewController: UIViewController
             if (!Game.Started)
             {
                 StartTimer()
-                
+                StartMover(interval: 0.01)
                 Game.Started = true
             }
             
@@ -115,6 +127,9 @@ class ViewController: UIViewController
             
             quote.text = Game.GetQuote()
             
+            moveTick.invalidate()
+            StartMover(interval: (Match?.moveFrequency)!)
+            
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1)
             {
                 self.littleGuy.isSelected = false
@@ -124,86 +139,26 @@ class ViewController: UIViewController
         
         
         
-        
-        /*
-        if(!playing)
-        {
-            playing = true
-            interval = 1.0
-            moneyPerTap = 0.5
-            timer.invalidate()
-            currentTime.text = "00:00"
-            score.text = "$0"
-            
-            startTimer()
-        }
-        
-        randomizePos()
-        
-        score.text!.remove(at: score.text!.startIndex)
-        
-        score.text = "$" + String(Double(score.text!)! + moneyPerTap)
-        
-        //Random quotes
-        var randomIndex = Int(arc4random_uniform(UInt32(randomQuotes.count)))
-        
-        while(quote.text == randomQuotes[randomIndex])
-        {
-            randomIndex = Int(arc4random_uniform(UInt32(randomQuotes.count)))
-        }
-        quote.text = randomQuotes[randomIndex]
-        
-        
-        //Achievement control
-        let value = score.text!.characters.dropFirst()
-        
-        if((Double(String(value)))! >= 10.0 && achievement[0] == false){
-            moneyPerTap*=2
-            quote.text = "LEVEL UP! This is just the beginning!"
-            achievement[0] = true
-            littleGuy.setImage(UIImage(named: "default.jpg"), for: .normal)
-        }
-        
-        if((Double(String(value)))! >= 100.0 && achievement[1] == false){
-            moneyPerTap*=2
-            quote.text = "LEVEL UP! Money is coming!"
-            achievement[1] = true
-            littleGuy.setImage(UIImage(named: "moneyPepe.png"), for: .normal)
-
-        }
-        
-        if((Double(String(value)))! >= 500.0 && achievement[2] == false){
-            moneyPerTap*=2
-            quote.text = "LEVEL UP! I see you're getting rich!"
-            achievement[2] = true
-            littleGuy.setImage(UIImage(named: "richPepe.jpg"), for: .normal)
-
-        }
-       
-        if((Double(String(value)))! >= 1000.0 && achievement[3] == false){
-            moneyPerTap*=2
-            quote.text = "LEVEL UP! This is just the beginning!"
-            achievement[3] = true
-
-        }
-        */
-        
+ 
     }
     
     @IBAction func restart(_ sender: AnyObject)
     {
-        timer.invalidate()
-        interval = 1.0
         
-        if(score.text! == "$0.0")
+        if(Match == nil || Match?.Score == 0.0)
         {
+            //if there is no match, invite the user to press on pepe
             quote.text = "Tap on Pepe to earn money!"
         }
         else
         {
+            //Stop game
+            timer.invalidate()
+            moveTick.invalidate()
+            interval = 1.0
             let time = currentTime.text!.components(separatedBy: ":")
             quote.text = "You earned \(score.text!) in \((time[0] != "00") ? "\(time[0]) minutes and " : "")\(time[1]) seconds"
-            playing = false
+            Match?.Started = false
         }
     }
 
