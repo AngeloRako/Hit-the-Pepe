@@ -79,11 +79,10 @@ class Game
     
     func InitAchievements()
     {
-        Achievements.append(Achievement(Name: "Not poor", Description: "You're not poor anymore!", Points: 1, Obtained: false))
-        Achievements.append(Achievement(Name: "2", Description: "2", Points: 2, Obtained: false))
-        Achievements.append(Achievement(Name: "3", Description: "3", Points: 3, Obtained: false))
-        Achievements.append(Achievement(Name: "4", Description: "4", Points: 4, Obtained: false))
-        Achievements.append(Achievement(Name: "5", Description: "5", Points: 5, Obtained: false))
+        Achievements.append(Achievement(Name: "Not poor", Description: "You're not poor anymore!", Image:"default.jpg", Points: 10, Multiplier:2, Obtained: false))
+        /*Achievements.append(Achievement(Name: "2", Description: "2", Image:"", Points: 1, Multiplier:0, Obtained: false))
+        Achievements.append(Achievement(Name: "3", Description: "3", Image:"", Points: 1, Multiplier:0, Obtained: false))
+        Achievements.append(Achievement(Name: "4", Description: "4", Image:"", Points: 1, Multiplier:0, Obtained: false))*/
     }
     
     func UpdateScore() -> Double
@@ -107,6 +106,10 @@ class Game
     {
         if let Achievement = CheckAchievements()
         {
+            UpdateButton(Image: Achievement.Image, State: .normal)
+            
+            ScorePerTap *= Achievement.Multiplier
+            
             return "'\(Achievement.Name)': \(Achievement.Description)"
         }
         

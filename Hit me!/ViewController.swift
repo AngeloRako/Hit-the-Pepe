@@ -120,8 +120,6 @@ class ViewController: UIViewController
                 self.littleGuy.isSelected = false
                 self.littleGuy.isUserInteractionEnabled = true
             }
-            
-            Game.CheckAchievements()
         }
         
         
