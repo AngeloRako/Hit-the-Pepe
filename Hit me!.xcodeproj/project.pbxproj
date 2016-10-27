@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171694621DC2A9F10041A99E /* cash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 171694611DC2A9F10041A99E /* cash.mp3 */; };
+		171694651DC2AF6A0041A99E /* sadpepe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 171694641DC2AF6A0041A99E /* sadpepe.jpg */; };
 		171C24DD1DC0ABF800A9E11F /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C24DB1DC0ABF800A9E11F /* FAIcon.swift */; };
 		171C24DE1DC0ABF800A9E11F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171C24DC1DC0ABF800A9E11F /* FontAwesome.ttf */; };
 		1757EA341DC1DECE005E5733 /* moneyPepe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA321DC1DECE005E5733 /* moneyPepe.png */; };
@@ -16,7 +18,6 @@
 		1757EA3D1DC20B57005E5733 /* dollarPepe1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA3C1DC20B57005E5733 /* dollarPepe1.jpg */; };
 		1757EA441DC250CB005E5733 /* dirty_loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA421DC250CB005E5733 /* dirty_loop.mp3 */; };
 		1757EA481DC252B8005E5733 /* muchmoney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA471DC252B8005E5733 /* muchmoney.jpg */; };
-		1757EA4A1DC2538A005E5733 /* cash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA491DC2538A005E5733 /* cash.mp3 */; };
 		17F5C10F1DBDF0E1009549E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C10E1DBDF0E1009549E2 /* AppDelegate.swift */; };
 		17F5C1111DBDF0E1009549E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C1101DBDF0E1009549E2 /* ViewController.swift */; };
 		17F5C1141DBDF0E1009549E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C1121DBDF0E1009549E2 /* Main.storyboard */; };
@@ -24,7 +25,6 @@
 		17F5C1191DBDF0E1009549E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C1171DBDF0E1009549E2 /* LaunchScreen.storyboard */; };
 		17F5C1241DBDF0E1009549E2 /* Hit_me_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C1231DBDF0E1009549E2 /* Hit_me_Tests.swift */; };
 		17F5C12F1DBDF0E1009549E2 /* Hit_me_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C12E1DBDF0E1009549E2 /* Hit_me_UITests.swift */; };
-		17F5C13E1DBE0B2F009549E2 /* sadpepe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */; };
 		17F5C13F1DBE0B2F009549E2 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C13D1DBE0B2F009549E2 /* default.jpg */; };
 		FADB4CC51DC1EC2D00E64FF1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4CC41DC1EC2D00E64FF1 /* Game.swift */; };
 		FADB4CC81DC1ED6100E64FF1 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4CC71DC1ED6100E64FF1 /* Achievement.swift */; };
@@ -49,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171694611DC2A9F10041A99E /* cash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cash.mp3; sourceTree = "<group>"; };
+		171694641DC2AF6A0041A99E /* sadpepe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sadpepe.jpg; sourceTree = "<group>"; };
 		171C24DB1DC0ABF800A9E11F /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FAIcon.swift; path = ../FAIcon.swift; sourceTree = "<group>"; };
 		171C24DC1DC0ABF800A9E11F /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		1757EA321DC1DECE005E5733 /* moneyPepe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneyPepe.png; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 		1757EA3C1DC20B57005E5733 /* dollarPepe1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dollarPepe1.jpg; sourceTree = "<group>"; };
 		1757EA421DC250CB005E5733 /* dirty_loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dirty_loop.mp3; sourceTree = "<group>"; };
 		1757EA471DC252B8005E5733 /* muchmoney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = muchmoney.jpg; sourceTree = "<group>"; };
-		1757EA491DC2538A005E5733 /* cash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cash.mp3; sourceTree = "<group>"; };
 		17F5C10B1DBDF0E1009549E2 /* Hit me!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hit me!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F5C10E1DBDF0E1009549E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F5C1101DBDF0E1009549E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		17F5C12A1DBDF0E1009549E2 /* Hit me!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hit me!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F5C12E1DBDF0E1009549E2 /* Hit_me_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hit_me_UITests.swift; sourceTree = "<group>"; };
 		17F5C1301DBDF0E1009549E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sadpepe.jpg; sourceTree = "<group>"; };
 		17F5C13D1DBE0B2F009549E2 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 		FADB4CC41DC1EC2D00E64FF1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		FADB4CC71DC1ED6100E64FF1 /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
@@ -104,11 +104,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171694631DC2AE4D0041A99E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1757EA3A1DC20920005E5733 /* veryRichPepe.png */,
+				1757EA3C1DC20B57005E5733 /* dollarPepe1.jpg */,
+				171694641DC2AF6A0041A99E /* sadpepe.jpg */,
+				1757EA381DC1E372005E5733 /* dollarPepe.jpeg */,
+				1757EA471DC252B8005E5733 /* muchmoney.jpg */,
+				17F5C13D1DBE0B2F009549E2 /* default.jpg */,
+				1757EA321DC1DECE005E5733 /* moneyPepe.png */,
+				1757EA331DC1DECE005E5733 /* richPepe.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		1757EA461DC250D2005E5733 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				171694611DC2A9F10041A99E /* cash.mp3 */,
 				1757EA421DC250CB005E5733 /* dirty_loop.mp3 */,
-				1757EA491DC2538A005E5733 /* cash.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -146,14 +161,7 @@
 				17F5C1121DBDF0E1009549E2 /* Main.storyboard */,
 				17F5C1151DBDF0E1009549E2 /* Assets.xcassets */,
 				17F5C1171DBDF0E1009549E2 /* LaunchScreen.storyboard */,
-				1757EA3A1DC20920005E5733 /* veryRichPepe.png */,
-				1757EA3C1DC20B57005E5733 /* dollarPepe1.jpg */,
-				17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */,
-				1757EA381DC1E372005E5733 /* dollarPepe.jpeg */,
-				1757EA471DC252B8005E5733 /* muchmoney.jpg */,
-				17F5C13D1DBE0B2F009549E2 /* default.jpg */,
-				1757EA321DC1DECE005E5733 /* moneyPepe.png */,
-				1757EA331DC1DECE005E5733 /* richPepe.jpg */,
+				171694631DC2AE4D0041A99E /* Images */,
 				17F5C11A1DBDF0E1009549E2 /* Info.plist */,
 			);
 			path = "Hit me!";
@@ -302,9 +310,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F5C13E1DBE0B2F009549E2 /* sadpepe.jpg in Resources */,
 				17F5C1191DBDF0E1009549E2 /* LaunchScreen.storyboard in Resources */,
 				17F5C1161DBDF0E1009549E2 /* Assets.xcassets in Resources */,
+				171694651DC2AF6A0041A99E /* sadpepe.jpg in Resources */,
+				171694621DC2A9F10041A99E /* cash.mp3 in Resources */,
 				1757EA3B1DC20920005E5733 /* veryRichPepe.png in Resources */,
 				1757EA351DC1DECE005E5733 /* richPepe.jpg in Resources */,
 				17F5C1141DBDF0E1009549E2 /* Main.storyboard in Resources */,
@@ -312,7 +321,6 @@
 				1757EA481DC252B8005E5733 /* muchmoney.jpg in Resources */,
 				1757EA391DC1E372005E5733 /* dollarPepe.jpeg in Resources */,
 				1757EA341DC1DECE005E5733 /* moneyPepe.png in Resources */,
-				1757EA4A1DC2538A005E5733 /* cash.mp3 in Resources */,
 				1757EA441DC250CB005E5733 /* dirty_loop.mp3 in Resources */,
 				17F5C13F1DBE0B2F009549E2 /* default.jpg in Resources */,
 				171C24DE1DC0ABF800A9E11F /* FontAwesome.ttf in Resources */,

@@ -117,7 +117,7 @@ class Game
             ScorePerTap *= Achievement.Multiplier
             
             //Increase difficulty
-            moveFrequency /= 3
+            moveFrequency *= 0.45
             
             return "'\(Achievement.Name)': \(Achievement.Description)"
         }
