@@ -21,6 +21,9 @@
 		17F5C12F1DBDF0E1009549E2 /* Hit_me_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C12E1DBDF0E1009549E2 /* Hit_me_UITests.swift */; };
 		17F5C13E1DBE0B2F009549E2 /* sadpepe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */; };
 		17F5C13F1DBE0B2F009549E2 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C13D1DBE0B2F009549E2 /* default.jpg */; };
+		FADB4CC51DC1EC2D00E64FF1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4CC41DC1EC2D00E64FF1 /* Game.swift */; };
+		FADB4CC81DC1ED6100E64FF1 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4CC71DC1ED6100E64FF1 /* Achievement.swift */; };
+		FADB4CCB1DC1F03300E64FF1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4CCA1DC1F03300E64FF1 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		17F5C1301DBDF0E1009549E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sadpepe.jpg; sourceTree = "<group>"; };
 		17F5C13D1DBE0B2F009549E2 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		FADB4CC41DC1EC2D00E64FF1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FADB4CC71DC1ED6100E64FF1 /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		FADB4CCA1DC1F03300E64FF1 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 		17F5C10D1DBDF0E1009549E2 /* Hit me! */ = {
 			isa = PBXGroup;
 			children = (
+				FADB4CC91DC1F01400E64FF1 /* Utilities */,
+				FADB4CC61DC1ED4D00E64FF1 /* Specialized */,
 				171C24DB1DC0ABF800A9E11F /* FAIcon.swift */,
 				17F5C10E1DBDF0E1009549E2 /* AppDelegate.swift */,
 				17F5C1101DBDF0E1009549E2 /* ViewController.swift */,
@@ -144,6 +152,23 @@
 				17F5C1301DBDF0E1009549E2 /* Info.plist */,
 			);
 			path = "Hit me!UITests";
+			sourceTree = "<group>";
+		};
+		FADB4CC61DC1ED4D00E64FF1 /* Specialized */ = {
+			isa = PBXGroup;
+			children = (
+				FADB4CC41DC1EC2D00E64FF1 /* Game.swift */,
+				FADB4CC71DC1ED6100E64FF1 /* Achievement.swift */,
+			);
+			name = Specialized;
+			sourceTree = "<group>";
+		};
+		FADB4CC91DC1F01400E64FF1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FADB4CCA1DC1F03300E64FF1 /* Helper.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +315,9 @@
 				171C24DD1DC0ABF800A9E11F /* FAIcon.swift in Sources */,
 				17F5C1111DBDF0E1009549E2 /* ViewController.swift in Sources */,
 				17F5C10F1DBDF0E1009549E2 /* AppDelegate.swift in Sources */,
+				FADB4CC51DC1EC2D00E64FF1 /* Game.swift in Sources */,
+				FADB4CC81DC1ED6100E64FF1 /* Achievement.swift in Sources */,
+				FADB4CCB1DC1F03300E64FF1 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
