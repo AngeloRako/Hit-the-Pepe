@@ -80,10 +80,10 @@ class Game
     
     func InitAchievements()
     {
-        Achievements.append(Achievement(Name: "Not poor", Description: "You're not poor anymore!", Image:"default.jpg", Points: 10, Multiplier:2, Obtained: false))
-        /*Achievements.append(Achievement(Name: "2", Description: "2", Image:"", Points: 1, Multiplier:0, Obtained: false))
-        Achievements.append(Achievement(Name: "3", Description: "3", Image:"", Points: 1, Multiplier:0, Obtained: false))
-        Achievements.append(Achievement(Name: "4", Description: "4", Image:"", Points: 1, Multiplier:0, Obtained: false))*/
+        Achievements.append(Achievement(Name: "Not starving", Description: "You're not starving anymore!", Image:"default.jpg", Points: 10, Multiplier:2, Obtained: false))
+        Achievements.append(Achievement(Name: "Not a beggar", Description: "Stahp begging, start investing!", Image:"moneyPepe.png", Points: 50, Multiplier:2, Obtained: false))
+        Achievements.append(Achievement(Name: "Not poor", Description: "Congrats, you're not poor anymore", Image:"richPepe.jpg", Points: 250, Multiplier:2, Obtained: false))
+        Achievements.append(Achievement(Name: "Enterpreneur", Description: "You can now wear more than one shirt per week", Image:"veryRichPepe.png", Points: 1000, Multiplier:2, Obtained: false))
     }
     
     func UpdateScore() -> Double
