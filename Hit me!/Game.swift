@@ -75,6 +75,7 @@ class Game
         Quotes.append("Cash is cool, but pepe is cooler.")
         Quotes.append("Pepe like money.")
         Quotes.append("Leeroy PEPEEEE")
+        Quotes.append("Such money, much rich")
     }
     
     func InitAchievements()
