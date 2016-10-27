@@ -104,6 +104,7 @@ class ViewController: UIViewController
 
     @IBAction func touched(_ sender: AnyObject)
     {
+        
         if let Game = Match
         {
             if (!Game.Started)
@@ -114,6 +115,9 @@ class ViewController: UIViewController
                 bgMusic.play()
                 
             }
+            
+            cashSound.currentTime = 0
+            
             cashSound.play()
 
             score.text = "$\(Game.UpdateScore())"
@@ -126,7 +130,7 @@ class ViewController: UIViewController
             moveTick.invalidate()
             StartMover(interval: (Match?.moveFrequency)!)
             
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.6)
             {
                 self.littleGuy.isSelected = false
                 self.littleGuy.isUserInteractionEnabled = true

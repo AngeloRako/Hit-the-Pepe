@@ -32,7 +32,7 @@ class Game
         
         self.Button = Button
         self.ScorePerTap = ScorePerTap
-        self.moveFrequency = 1.0
+        self.moveFrequency = 0.8
         
         InitQuotes()
         
