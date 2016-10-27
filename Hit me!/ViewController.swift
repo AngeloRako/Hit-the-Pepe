@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController
 {
@@ -19,33 +20,6 @@ class ViewController: UIViewController
     {
         Match?.MoveButton()
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     // Outlets
@@ -64,13 +38,31 @@ class ViewController: UIViewController
     var achievement = [Bool](repeating: false, count: 10)
     var timer = Timer()
     var moveTick = Timer()
+    var bgMusic = AVAudioPlayer()
+    var cashSound = AVAudioPlayer()
+
     //var playing = false
+    
     
     func Init()
     {
         Match = Game(ScorePerTap: 0.5, Button: littleGuy)
         
         restartBtn.setFAText(prefixText: "", icon: FAType.FARefresh, postfixText: "", size: 15)
+        
+        //start sound loop
+        do{
+            bgMusic = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath:Bundle.main.path(forResource: "dirty_loop", ofType: "mp3")!))
+            bgMusic.numberOfLoops = -1
+            bgMusic.prepareToPlay()
+            
+            cashSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath:Bundle.main.path(forResource: "cash", ofType: "mp3")!))
+            cashSound.prepareToPlay()
+        }
+        catch{
+            print(error)
+        }
+
     }
     
     override func viewDidLoad()
@@ -78,6 +70,7 @@ class ViewController: UIViewController
         super.viewDidLoad()
         
         Init()
+        
     }
     
     func StartTimer()
@@ -118,8 +111,11 @@ class ViewController: UIViewController
                 StartTimer()
                 StartMover(interval: 0.01)
                 Game.Started = true
+                bgMusic.play()
+                
             }
-            
+            cashSound.play()
+
             score.text = "$\(Game.UpdateScore())"
             
             littleGuy.isSelected = true
@@ -153,6 +149,7 @@ class ViewController: UIViewController
         else
         {
             //Stop game
+            bgMusic.stop()
             timer.invalidate()
             moveTick.invalidate()
             interval = 1.0

@@ -14,7 +14,9 @@
 		1757EA391DC1E372005E5733 /* dollarPepe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA381DC1E372005E5733 /* dollarPepe.jpeg */; };
 		1757EA3B1DC20920005E5733 /* veryRichPepe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA3A1DC20920005E5733 /* veryRichPepe.png */; };
 		1757EA3D1DC20B57005E5733 /* dollarPepe1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA3C1DC20B57005E5733 /* dollarPepe1.jpg */; };
-		1757EA411DC20C08005E5733 /* muchmoney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA401DC20C08005E5733 /* muchmoney.jpg */; };
+		1757EA441DC250CB005E5733 /* dirty_loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA421DC250CB005E5733 /* dirty_loop.mp3 */; };
+		1757EA481DC252B8005E5733 /* muchmoney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA471DC252B8005E5733 /* muchmoney.jpg */; };
+		1757EA4A1DC2538A005E5733 /* cash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA491DC2538A005E5733 /* cash.mp3 */; };
 		17F5C10F1DBDF0E1009549E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C10E1DBDF0E1009549E2 /* AppDelegate.swift */; };
 		17F5C1111DBDF0E1009549E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C1101DBDF0E1009549E2 /* ViewController.swift */; };
 		17F5C1141DBDF0E1009549E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C1121DBDF0E1009549E2 /* Main.storyboard */; };
@@ -54,7 +56,9 @@
 		1757EA381DC1E372005E5733 /* dollarPepe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dollarPepe.jpeg; sourceTree = "<group>"; };
 		1757EA3A1DC20920005E5733 /* veryRichPepe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veryRichPepe.png; sourceTree = "<group>"; };
 		1757EA3C1DC20B57005E5733 /* dollarPepe1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dollarPepe1.jpg; sourceTree = "<group>"; };
-		1757EA401DC20C08005E5733 /* muchmoney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = muchmoney.jpg; sourceTree = "<group>"; };
+		1757EA421DC250CB005E5733 /* dirty_loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dirty_loop.mp3; sourceTree = "<group>"; };
+		1757EA471DC252B8005E5733 /* muchmoney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = muchmoney.jpg; sourceTree = "<group>"; };
+		1757EA491DC2538A005E5733 /* cash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cash.mp3; sourceTree = "<group>"; };
 		17F5C10B1DBDF0E1009549E2 /* Hit me!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hit me!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F5C10E1DBDF0E1009549E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F5C1101DBDF0E1009549E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1757EA461DC250D2005E5733 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1757EA421DC250CB005E5733 /* dirty_loop.mp3 */,
+				1757EA491DC2538A005E5733 /* cash.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		17F5C1021DBDF0E1009549E2 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 		17F5C10D1DBDF0E1009549E2 /* Hit me! */ = {
 			isa = PBXGroup;
 			children = (
+				1757EA461DC250D2005E5733 /* Sounds */,
 				FADB4CC91DC1F01400E64FF1 /* Utilities */,
 				FADB4CC61DC1ED4D00E64FF1 /* Specialized */,
 				171C24DB1DC0ABF800A9E11F /* FAIcon.swift */,
@@ -136,7 +150,7 @@
 				1757EA3C1DC20B57005E5733 /* dollarPepe1.jpg */,
 				17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */,
 				1757EA381DC1E372005E5733 /* dollarPepe.jpeg */,
-				1757EA401DC20C08005E5733 /* muchmoney.jpg */,
+				1757EA471DC252B8005E5733 /* muchmoney.jpg */,
 				17F5C13D1DBE0B2F009549E2 /* default.jpg */,
 				1757EA321DC1DECE005E5733 /* moneyPepe.png */,
 				1757EA331DC1DECE005E5733 /* richPepe.jpg */,
@@ -289,15 +303,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				17F5C13E1DBE0B2F009549E2 /* sadpepe.jpg in Resources */,
-				1757EA411DC20C08005E5733 /* muchmoney.jpg in Resources */,
 				17F5C1191DBDF0E1009549E2 /* LaunchScreen.storyboard in Resources */,
 				17F5C1161DBDF0E1009549E2 /* Assets.xcassets in Resources */,
 				1757EA3B1DC20920005E5733 /* veryRichPepe.png in Resources */,
 				1757EA351DC1DECE005E5733 /* richPepe.jpg in Resources */,
 				17F5C1141DBDF0E1009549E2 /* Main.storyboard in Resources */,
 				1757EA3D1DC20B57005E5733 /* dollarPepe1.jpg in Resources */,
+				1757EA481DC252B8005E5733 /* muchmoney.jpg in Resources */,
 				1757EA391DC1E372005E5733 /* dollarPepe.jpeg in Resources */,
 				1757EA341DC1DECE005E5733 /* moneyPepe.png in Resources */,
+				1757EA4A1DC2538A005E5733 /* cash.mp3 in Resources */,
+				1757EA441DC250CB005E5733 /* dirty_loop.mp3 in Resources */,
 				17F5C13F1DBE0B2F009549E2 /* default.jpg in Resources */,
 				171C24DE1DC0ABF800A9E11F /* FontAwesome.ttf in Resources */,
 			);
