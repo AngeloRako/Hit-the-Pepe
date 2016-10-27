@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171C24DD1DC0ABF800A9E11F /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C24DB1DC0ABF800A9E11F /* FAIcon.swift */; };
+		171C24DE1DC0ABF800A9E11F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 171C24DC1DC0ABF800A9E11F /* FontAwesome.ttf */; };
+		1757EA341DC1DECE005E5733 /* moneyPepe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA321DC1DECE005E5733 /* moneyPepe.png */; };
+		1757EA351DC1DECE005E5733 /* richPepe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA331DC1DECE005E5733 /* richPepe.jpg */; };
+		1757EA391DC1E372005E5733 /* dollarPepe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1757EA381DC1E372005E5733 /* dollarPepe.jpeg */; };
 		17F5C10F1DBDF0E1009549E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C10E1DBDF0E1009549E2 /* AppDelegate.swift */; };
 		17F5C1111DBDF0E1009549E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C1101DBDF0E1009549E2 /* ViewController.swift */; };
 		17F5C1141DBDF0E1009549E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C1121DBDF0E1009549E2 /* Main.storyboard */; };
@@ -14,6 +19,8 @@
 		17F5C1191DBDF0E1009549E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C1171DBDF0E1009549E2 /* LaunchScreen.storyboard */; };
 		17F5C1241DBDF0E1009549E2 /* Hit_me_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C1231DBDF0E1009549E2 /* Hit_me_Tests.swift */; };
 		17F5C12F1DBDF0E1009549E2 /* Hit_me_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5C12E1DBDF0E1009549E2 /* Hit_me_UITests.swift */; };
+		17F5C13E1DBE0B2F009549E2 /* sadpepe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */; };
+		17F5C13F1DBE0B2F009549E2 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17F5C13D1DBE0B2F009549E2 /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171C24DB1DC0ABF800A9E11F /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FAIcon.swift; path = ../FAIcon.swift; sourceTree = "<group>"; };
+		171C24DC1DC0ABF800A9E11F /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		1757EA321DC1DECE005E5733 /* moneyPepe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneyPepe.png; sourceTree = "<group>"; };
+		1757EA331DC1DECE005E5733 /* richPepe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = richPepe.jpg; sourceTree = "<group>"; };
+		1757EA381DC1E372005E5733 /* dollarPepe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dollarPepe.jpeg; sourceTree = "<group>"; };
 		17F5C10B1DBDF0E1009549E2 /* Hit me!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hit me!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F5C10E1DBDF0E1009549E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F5C1101DBDF0E1009549E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,8 @@
 		17F5C12A1DBDF0E1009549E2 /* Hit me!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hit me!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F5C12E1DBDF0E1009549E2 /* Hit_me_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hit_me_UITests.swift; sourceTree = "<group>"; };
 		17F5C1301DBDF0E1009549E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sadpepe.jpg; sourceTree = "<group>"; };
+		17F5C13D1DBE0B2F009549E2 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,7 @@
 		17F5C1021DBDF0E1009549E2 = {
 			isa = PBXGroup;
 			children = (
+				171C24DC1DC0ABF800A9E11F /* FontAwesome.ttf */,
 				17F5C10D1DBDF0E1009549E2 /* Hit me! */,
 				17F5C1221DBDF0E1009549E2 /* Hit me!Tests */,
 				17F5C12D1DBDF0E1009549E2 /* Hit me!UITests */,
@@ -97,11 +112,17 @@
 		17F5C10D1DBDF0E1009549E2 /* Hit me! */ = {
 			isa = PBXGroup;
 			children = (
+				171C24DB1DC0ABF800A9E11F /* FAIcon.swift */,
 				17F5C10E1DBDF0E1009549E2 /* AppDelegate.swift */,
 				17F5C1101DBDF0E1009549E2 /* ViewController.swift */,
 				17F5C1121DBDF0E1009549E2 /* Main.storyboard */,
 				17F5C1151DBDF0E1009549E2 /* Assets.xcassets */,
 				17F5C1171DBDF0E1009549E2 /* LaunchScreen.storyboard */,
+				17F5C13C1DBE0B2F009549E2 /* sadpepe.jpg */,
+				1757EA381DC1E372005E5733 /* dollarPepe.jpeg */,
+				17F5C13D1DBE0B2F009549E2 /* default.jpg */,
+				1757EA321DC1DECE005E5733 /* moneyPepe.png */,
+				1757EA331DC1DECE005E5733 /* richPepe.jpg */,
 				17F5C11A1DBDF0E1009549E2 /* Info.plist */,
 			);
 			path = "Hit me!";
@@ -193,6 +214,7 @@
 				TargetAttributes = {
 					17F5C10A1DBDF0E1009549E2 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AP9DHZ7JEM;
 						ProvisioningStyle = Automatic;
 					};
 					17F5C11E1DBDF0E1009549E2 = {
@@ -232,9 +254,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F5C13E1DBE0B2F009549E2 /* sadpepe.jpg in Resources */,
 				17F5C1191DBDF0E1009549E2 /* LaunchScreen.storyboard in Resources */,
 				17F5C1161DBDF0E1009549E2 /* Assets.xcassets in Resources */,
+				1757EA351DC1DECE005E5733 /* richPepe.jpg in Resources */,
 				17F5C1141DBDF0E1009549E2 /* Main.storyboard in Resources */,
+				1757EA391DC1E372005E5733 /* dollarPepe.jpeg in Resources */,
+				1757EA341DC1DECE005E5733 /* moneyPepe.png in Resources */,
+				17F5C13F1DBE0B2F009549E2 /* default.jpg in Resources */,
+				171C24DE1DC0ABF800A9E11F /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171C24DD1DC0ABF800A9E11F /* FAIcon.swift in Sources */,
 				17F5C1111DBDF0E1009549E2 /* ViewController.swift in Sources */,
 				17F5C10F1DBDF0E1009549E2 /* AppDelegate.swift in Sources */,
 			);
@@ -412,7 +441,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AP9DHZ7JEM;
 				INFOPLIST_FILE = "Hit me!/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.iosdeveloperacademy.Hit-me-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +455,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AP9DHZ7JEM;
 				INFOPLIST_FILE = "Hit me!/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.iosdeveloperacademy.Hit-me-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +538,7 @@
 				17F5C1351DBDF0E1009549E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17F5C1361DBDF0E1009549E2 /* Build configuration list for PBXNativeTarget "Hit me!Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +547,7 @@
 				17F5C1381DBDF0E1009549E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17F5C1391DBDF0E1009549E2 /* Build configuration list for PBXNativeTarget "Hit me!UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +556,7 @@
 				17F5C13B1DBDF0E1009549E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Hit Pepe and earn money!"; ObjectID = "7np-ma-vfm"; */
+"7np-ma-vfm.text" = "Hit Pepe and earn money!";
+
+/* Class = "UIViewController"; title = "Main Screen"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Main Screen";
+
+/* Class = "UIButton"; normalTitle = "Play"; ObjectID = "Mg8-Nh-7hY"; */
+"Mg8-Nh-7hY.normalTitle" = "Play";
+
+/* Class = "UILabel"; text = "$0.0"; ObjectID = "Xf3-JW-WcJ"; */
+"Xf3-JW-WcJ.text" = "$0.0";
+
+/* Class = "UIBarButtonItem"; title = "Restart"; ObjectID = "bAj-GO-pVQ"; */
+"bAj-GO-pVQ.title" = "Restart";
+
+/* Class = "UINavigationItem"; title = "Hit the Pepe!"; ObjectID = "lec-Rr-CWa"; */
+"lec-Rr-CWa.title" = "Hit the Pepe!";
