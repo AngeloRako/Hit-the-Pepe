@@ -34,8 +34,8 @@ class ViewController: UIViewController
     
     // Variables
     var interval:TimeInterval = 1.00
-    var moneyPerTap:Double = 0.5
-    var achievement = [Bool](repeating: false, count: 10)
+    //var moneyPerTap:Double = 0.5
+    //var achievement = [Bool](repeating: false, count: 10)
     var timer = Timer()
     var moveTick = Timer()
     var bgMusic = AVAudioPlayer()
@@ -109,6 +109,7 @@ class ViewController: UIViewController
         {
             if (!Game.Started)
             {
+                score.text = "$0.0"
                 StartTimer()
                 StartMover(interval: 0.01)
                 Game.Started = true
@@ -159,6 +160,7 @@ class ViewController: UIViewController
             interval = 1.0
             let time = currentTime.text!.components(separatedBy: ":")
             quote.text = "You earned \(score.text!) in \((time[0] != "00") ? "\(time[0]) minutes and " : "")\(time[1]) seconds"
+            Match = Game(ScorePerTap: 0.5, Button: littleGuy)
             Match?.Started = false
         }
     }
